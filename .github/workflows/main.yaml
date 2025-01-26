@@ -2,7 +2,7 @@ name: Rerendering README file
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '10 1 * * *'
   push:
     branches:
       - main
