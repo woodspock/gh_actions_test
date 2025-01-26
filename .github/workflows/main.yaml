@@ -21,10 +21,10 @@ jobs:
       with:
         version: LATEST
         
-    - name: Install R packzges
+    - name: Install R packages
       run: |
-        Rscript -e "install.packages('renv', repos = 'https://packagemanager.posit.com/cran/latest')"
-        Rscript -e "renv::restore(repos = 'https://packagemanager.posit.com/cran/latest')"
+        Rscript -e "install.packages('renv', repos = 'https://packagemanager.posit.co/cran/latest')"
+        Rscript -e "renv::restore(repos = 'https://packagemanager.posit.co/cran/latest')"
         
     - name: Rerender Quarto file
       run: |
